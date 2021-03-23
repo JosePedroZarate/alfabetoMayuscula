@@ -1,0 +1,233 @@
+\documentclass[40pt]{article}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc} % Puede depender del sistema o editor
+\usepackage{enumerate}
+
+
+\title{\textbf{Universidad Veracruzana} }
+\date{\textbf{Facultad de Negocios y Tecnologias} }
+
+\begin{document}
+\maketitle
+%\section{Integrantes}
+\textsf{\Large 
+\\
+\\
+Experiencia Educativa: Paradigmas de Programacion. \\}
+\\
+\\ 
+\maketitle
+%\section{Integrantes}
+\textsf{\Large Catedratico: Centeno Tellez Adolfo. \\}
+\\
+\\
+\maketitle
+%\section{Integrantes}
+\textsf{\Large Tema: Reporte Tecnico. \\}
+\\
+\\
+\maketitle
+%\section{Integrantes}
+\textsf{\Large Alumno: Zarate Espinosa Jose Pedro. \\}
+\\
+\\ 
+\maketitle
+%\section{Integrantes}
+\textsf{\Large Grupo: 401 ISW 1° Parcial \\}
+\\
+\\
+\maketitle
+%\section{Integrantes}
+\textsf{\Large Fecha de Entrega: 23 de Marzo del 2021 \\}
+
+\newpage
+
+\maketitle
+%\section{Integrantes}
+\textsf{\ \\
+\textbf{Introducción:}\\
+\\
+Este documento se elaboro para el reporte tecnico del proyecto de Hopfield identificar numeros con patrones a reconocer en el cual se requiere poner a prueba los conocimientos que hemos obtenido en las E.E (Experiencias Educativas) de Paradigmas de Programacion.\\
+\\
+Este consta de identificar numeros naturales que constan del 1 al 5, los cuales se ubicaran en una matriz de 7 x 5, esto funcionara en C++ el cual es el lenguaje utilizado en esta experiencia educativa. \\}
+
+\maketitle
+%\section{Integrantes}
+\textsf{\ \\
+\textbf{Recursos / Definiciones:}\\
+\\
+\textbf{Hopfield :} Una red de Hopfield es una forma de red neuronal artificial recurrente inventada por John Hopfield. Las redes de Hopfield se usan como sistemas de Memoria asociativa con unidades binarias. Están diseñadas para converger a un mínimo local.
+\\
+\\
+\textbf{Matriz :} Una matriz es una colección de números ordenados en filas y columnas, por ejemplo, una matriz contiene los números 7 18 3 -6 0 y 12. Cada uno de estos valores es un elemento de la matriz.
+\\
+\\
+\textbf{C++ :} Es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos.
+\\
+\\
+\textbf{Numeros Naturales :} Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos, como también en operaciones elementales de cálculo. Son aquellos números naturales los que sirven para contar elementos por lo que son naturales por ejemplo: 6,7,8,9… Por definición convencional se dirá que cualquier elemento del siguiente conjunto, N = {1, 2, 3, 4, …}, es un número natural.. \\}
+
+\maketitle
+%\section{Integrantes}
+\textsf{\ \\
+\textbf{Desarrollo:}\\
+\\
+En este proyecto se pretende mas de un objetivo, uno de ellos es terminar el programa sastifactoricamente, lo cual se refiere a que cumpla con lo planteado antes mencionado, es decir que identifique los numeros naturales del 1 al 5 esto se lograra con una matriz de 7 x 5, la cual se implementara en un lenguaje muy conocido el cual es C++, como segundo objetivo es aprobar el primer parcial de la E.E Paradigmas de Programacion.
+\\
+\\
+\\
+\\
+A continuacion se muestra un ejemplo de como quedaria cada numero natural en su matriz correspondiente. \\}
+
+\maketitle
+%\section{Integrantes}
+\textsf{\\
+\\
+Numero 1.\\}
+
+\vspace{0.0 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}| }
+\hline
+0&0&\textbf{1}&0&0
+\\\hline
+0&\textbf{1}&\textbf{1}&0&0
+\\\hline
+\textbf{1}&0&\textbf{1}&0&0
+\\\hline
+0&0&\textbf{1}&0&0
+\\\hline
+0&0&\textbf{1}&0&0
+\\\hline
+0&0&\textbf{1}&0&0
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\end{tabular}
+\end{table}
+
+
+\maketitle
+%\section{Integrantes}
+\textsf{\\
+\\
+Numero 2.\\}
+
+\vspace{0.0 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}| }
+\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\textbf{1}&0&0&0&\textbf{1}
+\\\hline
+0&0&0&\textbf{1}&0
+\\\hline
+0&0&\textbf{1}&0&0
+\\\hline
+0&\textbf{1}&0&0&0
+\\\hline
+\textbf{1}&0&0&0&0
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\end{tabular}
+\end{table}
+
+
+\maketitle
+%\section{Integrantes}
+\textsf{\\
+\\
+Numero 3.\\}
+
+\vspace{0.0 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}| }
+\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\textbf{1}&0&0&0&\textbf{1}
+\\\hline
+0&0&0&0&\textbf{1}
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+0&0&0&0&\textbf{1}
+\\\hline
+\textbf{1}&0&0&0&\textbf{1}
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\end{tabular}
+\end{table}
+
+\maketitle
+%\section{Integrantes}
+\textsf{\\
+\\
+Numero 4.\\}
+
+\vspace{0.0 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}| }
+\hline
+0&0&0&\textbf{1}&0
+\\\hline
+0&0&\textbf{1}&\textbf{1}&0
+\\\hline
+0&\textbf{1}&0&\textbf{1}&0
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+0&0&0&\textbf{1}&0
+\\\hline
+0&0&0&\textbf{1}&0
+\\\hline
+0&0&0&\textbf{1}&0
+\\\hline
+\end{tabular}
+\end{table}
+
+
+\maketitle
+%\section{Integrantes}
+\textsf{\\
+\\
+Numero 5.\\}
+
+\vspace{0.0 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}|p{.3 cm}| }
+\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\textbf{1}&0&0&0&0
+\\\hline
+\textbf{1}&0&0&0&0
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+0&0&0&0&\textbf{1}
+\\\hline
+0&0&0&0&\textbf{1}
+\\\hline
+\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}&\textbf{1}
+\\\hline
+\end{tabular}
+\end{table}
+
+
+\maketitle
+%\section{Integrantes}
+\textsf{\ \\
+\textbf{Conclusión:}
+\\
+\\
+En esta ocasión nos presentamos con muchas más dificultades que lo habitual, pero no obstante se tratara de terminar este proyecto como se requiere, ya que estamos empezando el semestre con un gran reto, trabajar con redes neuronales.\\}
+
+
+
+\end{document}
